@@ -20,7 +20,7 @@
  *
  * @author <a href="http://vanessa.b3log.org">Liyuan Li</a>
  * @author <a href="http://88250.b3log.org">Liang Ding</a>
- * @author <a href="http://zephyr.b3log.org">Zephyr</a>
+ * @author <a href="https://hacpai.com/member/ZephyrJung">Zephyr</a>
  * @version 1.47.1.0, Nov 19, 2019
  */
 
@@ -669,7 +669,6 @@ var Util = {
       },
       lang: Label.langLabel,
       hint: {
-        emojiPath: Label.staticServePath + '/emoji/graphics',
         emojiTail: '<a href="' + Label.servePath +
           '/settings/function" target="_blank">设置常用表情</a>',
         emoji: Label.emoji,
@@ -711,21 +710,15 @@ var Util = {
     if ($(window).width() < 768) {
       options.toolbar = [
         'emoji',
-        'headings',
-        'quote',
-        '|',
-        'list',
-        'ordered-list',
-        'check',
-        '|',
-        'upload',
+        'bold',
+        'italic',
         'link',
-        'table',
-        'record',
-        '|',
-        'both',
+        'list',
+        'check',
+        'upload',
+        'wysiwyg',
         'preview',
-        'info',
+        'fullscreen',
         'help',
       ]
       options.resize.enable = false
